@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PatternFly Template</title>
+
+    <!-- PatternFly CSS -->
+    <link rel="stylesheet" href="node_modules/patternfly/dist/css/patternfly.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- PatternFly JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="node_modules/patternfly/components/matchHeight/jquery.matchHeight-min.js"></script>
+    <script src="node_modules/patternfly/dist/js/patternfly.min.js"></script>
+
+  </head>
+  <body class="cards-pf">
+
+
+    <nav class="navbar navbar-default navbar-pf" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-16">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+          <img src="node_modules/patternfly/dist/img/brand.svg" alt="PatternFly Enterprise Application">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse navbar-collapse-16">
+        <ul class="nav navbar-nav navbar-utility">
+          <li>
+            <a href="#">Status</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="pficon pficon-user"></span>
+              Brian Johnson
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Link</a>
+              </li>
+              <li>
+                <a href="#">Another link</a>
+              </li>
+              <li>
+                <a href="#">Something else here</a>
+              </li>
+              <li class="divider"></li>
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">More options</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Another link</a>
+                  </li>
+                  <li>
+                    <a href="#">Something else here</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li>
+                    <a href="#">Separated link</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="#">One more separated link</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#">One more separated link</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-primary persistent-secondary">
+          <li class="context context-bootstrap-select">
+            <select class="selectpicker bs-select-hidden" data-live-search="true">
+              <optgroup label="Context Label">
+                <option>First Option</option>
+                <option>Another Option</option>
+                <option>And Another</option>
+                <option>Fourth Option That Is a Lot Longer And Will Be Too Long At Small Resolutions</option>
+                <option data-divider="true"></option>
+                <option data-subtext="supplemental data">Fifth Option</option>
+                <option disabled="">Disabled Option</option>
+                <option data-subtext="end">Final Option</option>
+              </optgroup>
+            </select><div class="btn-group bootstrap-select"><button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" title="First Option" aria-expanded="false"><span class="filter-option pull-left">First Option</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open" style="max-height: 380px; overflow: hidden; min-height: 117px;"><div class="bs-searchbox"><input type="text" class="form-control" autocomplete="off"></div><ul class="dropdown-menu inner" role="menu" style="max-height: 334px; overflow-y: auto; min-height: 71px;"><li class="dropdown-header " data-optgroup="1"><span class="text">Context Label</span></li><li data-original-index="0" data-optgroup="1" class="selected active"><a tabindex="0" class="opt  " style="" data-tokens="null"><span class="text">First Option</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1" data-optgroup="1"><a tabindex="0" class="opt  " style="" data-tokens="null"><span class="text">Another Option</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2" data-optgroup="1"><a tabindex="0" class="opt  " style="" data-tokens="null"><span class="text">And Another</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3" data-optgroup="1"><a tabindex="0" class="opt  " style="" data-tokens="null"><span class="text">Fourth Option That Is a Lot Longer And Will Be Too Long At Small Resolutions</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li class="divider" data-original-index="4"></li><li data-original-index="5" data-optgroup="1"><a tabindex="0" class="opt  " style="" data-tokens="null"><span class="text">Fifth Option<small class="text-muted">supplemental data</small></span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6" data-optgroup="1" class="disabled"><a tabindex="-1" class="opt  " style="" data-tokens="null" href="#"><span class="text">Disabled Option</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7" data-optgroup="1"><a tabindex="0" class="opt  " style="" data-tokens="null"><span class="text">Final Option<small class="text-muted">end</small></span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+          </li>
+          <li>
+            <a href="#">First Link</a>
+          </li>
+          <li class="active">
+            <a href="#">Another Link</a>
+            <ul class="nav navbar-nav navbar-persistent">
+              <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Link</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Another link</a>
+                  </li>
+                  <li>
+                    <a href="#">Something else here</a>
+                  </li>
+                  <li>
+                    <a href="#">Remembering to keep</a>
+                  </li>
+                  <li>
+                    <a href="#">It between five and seven</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="active">
+                <a href="#">Another Link</a>
+              </li>
+              <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Something Else Here</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Another link</a>
+                  </li>
+                  <li>
+                    <a href="#">Something else here</a>
+                  </li>
+                  <li>
+                    <a href="#">Remembering to keep</a>
+                  </li>
+                  <li>
+                    <a href="#">It between five and seven</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Remembering to Keep</a>
+              </li>
+              <li>
+                <a href="#">It Between Five and Seven</a>
+              </li>
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="#" class="dropdown-toggle" data-toggle="dropdown">More options</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Another link</a>
+                  </li>
+                  <li>
+                    <a href="#">Something else here</a>
+                  </li>
+                  <li>
+                    <a href="#">Remembering to keep</a>
+                  </li>
+                  <li>
+                    <a href="#">It between five and seven</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">And Another</a>
+          </li>
+          <li>
+            <a href="#">As a General Rule</a>
+          </li>
+          <li>
+            <a href="#">Five to Seven Links</a>
+          </li>
+          <li>
+            <a href="#">Is Good</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    
+    
+    <div class="container-fluid container-cards-pf">
+      
+
+      <div class="row">
+      
+        <div class="col-xs-12 col-md-8">
+          
+          <div class="row row-cards-pf">
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <div class="card-pf card-pf-accented">
+                <h2 class="card-pf-title">
+                  Card Title
+                </h2>
+                <div class="card-pf-body">
+                  <p>
+                    [card contents]
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <div class="card-pf card-pf-accented">
+                <h2 class="card-pf-title">
+                  Card Title
+                </h2>
+                <div class="card-pf-body">
+                  <p>
+                    [card contents]
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <div class="card-pf card-pf-accented">
+                <h2 class="card-pf-title">
+                  Card Title
+                </h2>
+                <div class="card-pf-body">
+                  <p>
+                    [card contents]
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <div class="card-pf card-pf-accented">
+                <h2 class="card-pf-title">
+                  Card Title
+                </h2>
+                <div class="card-pf-body">
+                  <p>
+                    [card contents]
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div><!-- /row -->
+        
+        
+        </div>
+        
+        <div class="col-xs-12 col-md-4">
+        
+          <div class="row row-cards-pf">
+            <div class="col-xs-6 col-sm-4 col-md-12">
+              <div class="card-pf card-pf-accented">
+                <h2 class="card-pf-title">
+                  Card Title
+                </h2>
+                <div class="card-pf-body">
+                  <p>
+                    [card contents]
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div><!-- /row -->        
+        
+        
+        </div>
+        
+      </div>      
+      
+      <div class="row row-cards-pf">
+        <div class="col-xs-6 col-sm-4 col-md-2">
+          <div class="card-pf card-pf-accented">
+            <h2 class="card-pf-title">
+              Card Title
+            </h2>
+            <div class="card-pf-body">
+              <p>
+                [card contents]
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+          <div class="card-pf card-pf-accented">
+            <h2 class="card-pf-title">
+              Card Title
+            </h2>
+            <div class="card-pf-body">
+              <p>
+                [card contents]
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+          <div class="card-pf card-pf-accented">
+            <h2 class="card-pf-title">
+              Card Title
+            </h2>
+            <div class="card-pf-body">
+              <p>
+                [card contents]
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+          <div class="card-pf card-pf-accented">
+            <h2 class="card-pf-title">
+              Card Title
+            </h2>
+            <div class="card-pf-body">
+              <p>
+                [card contents]
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+          <div class="card-pf card-pf-accented">
+            <h2 class="card-pf-title">
+              Card Title
+            </h2>
+            <div class="card-pf-body">
+              <p>
+                [card contents]
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+          <div class="card-pf card-pf-accented">
+            <h2 class="card-pf-title">
+              Card Title
+            </h2>
+            <div class="card-pf-body">
+              <p>
+                [card contents]
+              </p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /row -->
+      <div class="row row-cards-pf">
+        <div class="col-xs-6 col-sm-5 col-md-5">
+          <div class="card-pf">
+            <h2 class="card-pf-title">
+              Card Title
+            </h2>
+            <div class="card-pf-body">
+              <p>[card contents]</p>
+            </div>
+            <div class="card-pf-footer">
+              <p><a href="#">Footer link</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-7 col-md-7">
+          <div class="card-pf">
+            <h2 class="card-pf-title">
+              Card Title
+            </h2>
+            <div class="card-pf-body">
+              <p>[card contents]</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /row -->
+      <div class="row row-cards-pf">
+        <div class="col-xs-6 col-sm-3 col-md-3">
+          <div class="card-pf">
+            <div class="card-pf-heading">
+              <h2 class="card-pf-title">
+                Card Title
+              </h2>
+            </div>
+            <div class="card-pf-body">
+              <p>[card contents]</p>
+            </div>
+            <div class="card-pf-footer">
+              <p><a href="#">Footer link</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-9 col-md-9">
+          <div class="card-pf">
+            <div class="card-pf-heading">
+              <h2 class="card-pf-title">
+                Card Title
+              </h2>
+            </div>
+            <div class="card-pf-body">
+              <p>[card contents]</p>
+            </div>
+            <div class="card-pf-footer">
+              <p><a href="#">Footer link</a></p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /row -->
+      <div class="row row-cards-pf">
+        <div class="col-xs-6 col-sm-8 col-md-8">
+          <div class="card-pf">
+            <div class="card-pf-body">
+              <p>[card contents]</p>
+            </div>
+            <div class="card-pf-footer">
+              <p><a href="#">Footer link</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-4">
+          <div class="card-pf">
+            <div class="card-pf-body">
+              <p>[card contents]</p>
+            </div>
+            <div class="card-pf-footer">
+              <p><a href="#">Footer link</a></p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /row -->
+      <div class="row row-cards-pf">
+        <div class="col-xs-6 col-sm-6 col-md-6">
+          <div class="card-pf">
+            <div class="card-pf-body">
+              <p>[card contents]</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+          <div class="card-pf">
+            <div class="card-pf-body">
+              <p>[card contents]</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /row -->
+    </div><!-- /container -->
+    <script>
+      $(function() {
+        // matchHeight the contents of each .card-pf and then the .card-pf itself
+        $(".row-cards-pf > [class*='col'] > .card-pf .card-pf-title").matchHeight();
+        $(".row-cards-pf > [class*='col'] > .card-pf > .card-pf-body").matchHeight();
+        $(".row-cards-pf > [class*='col'] > .card-pf > .card-pf-footer").matchHeight();
+        $(".row-cards-pf > [class*='col'] > .card-pf").matchHeight();
+      });
+    </script>
+    
+    
+    
+    
+
+  </body>
+</html>
