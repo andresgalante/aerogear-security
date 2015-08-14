@@ -1855,15 +1855,66 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
   border-top: 2px solid transparent;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.175);
-  padding: 0 20px;
   margin: 0 -10px 20px;
+  padding: 0 20px;
 }
 .card-pf.card-pf-accented {
   border-top-color: #39a5dc;
 }
+.card-pf.card-pf-aggregate-status .card-pf-title a,
+.card-pf.card-pf-aggregate-status .card-pf-aggregate-status-notifications a {
+  color: #333333;
+}
+.card-pf.card-pf-aggregate-status .card-pf-title a.add,
+.card-pf.card-pf-aggregate-status .card-pf-aggregate-status-notifications a.add {
+  color: #0099d3;
+}
+.card-pf.card-pf-aggregate-status .card-pf-title a.add:hover,
+.card-pf.card-pf-aggregate-status .card-pf-aggregate-status-notifications a.add:hover {
+  color: #00618a;
+}
+.card-pf.card-pf-aggregate-status .card-pf-title a:hover,
+.card-pf.card-pf-aggregate-status .card-pf-aggregate-status-notifications a:hover {
+  color: #0099d3;
+}
+.card-pf.card-pf-aggregate-status,
+.card-pf.card-pf-status {
+  padding: 0 10px;
+  text-align: center;
+}
+.card-pf.card-pf-status {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .card-pf.card-pf-bleed-left {
+    margin-left: -20px;
+  }
+  .card-pf.card-pf-bleed-right {
+    border-right: 1px solid #d1d1d1;
+    margin-right: -20px;
+  }
+}
+.card-pf-aggregate-status-notifications {
+  font-size: 24px;
+  font-weight: 300;
+}
+.card-pf-aggregate-status-notifications .fa,
+.card-pf-aggregate-status-notifications .pficon {
+  font-size: 18px;
+  margin-right: 7px;
+}
+.card-pf-aggregate-status-notifications .card-pf-aggregate-status-notification + .card-pf-aggregate-status-notification {
+  border-left: 1px solid #d1d1d1;
+  margin-left: 3px;
+  padding-left: 10px;
+}
 .card-pf-body {
   margin: 20px 0;
   padding: 0 0 20px;
+}
+.card-pf-aggregate-status .card-pf-body {
+  margin-top: 10px;
+  padding-bottom: 10px;
 }
 .card-pf-body > *:last-child {
   margin-bottom: 0;
@@ -1888,6 +1939,37 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
   font-weight: 300;
   margin: 20px 0;
   padding: 0;
+}
+.card-pf-aggregate-status .card-pf-title {
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+.card-pf-aggregate-status .card-pf-title .fa,
+.card-pf-aggregate-status .card-pf-title .pficon {
+  color: #72767b;
+  font-size: 16px;
+  margin-right: 7px;
+}
+.card-pf-title .card-pf-aggregate-status-count,
+.card-pf-title .card-pf-status-count {
+  font-size: 16px;
+}
+.card-pf-status .card-pf-title {
+  font-size: 12px;
+  margin: 10px 0 0;
+  padding: 0 0 10px;
+}
+.card-pf-status .card-pf-title .fa,
+.card-pf-status .card-pf-title .pficon {
+  color: #72767b;
+  font-size: 28px;
+  position: absolute;
+  left: 10px;
+  margin-top: -14px;
+  top: 50%;
+}
+.card-pf-title .card-pf-status-count {
+  display: block;
 }
 .cards-pf {
   background: #f5f5f5;
@@ -3390,4 +3472,104 @@ table.datatable th:active {
 }
 .prettyprint ol.linenums {
   margin-bottom: 0;
+}
+.spark {
+  margin: -20px -10px 0px -10px;
+}
+.spark .chart {
+  margin-bottom: -15px;
+}
+.card-pf-actions {
+  float: right;
+  margin-top: -5px;
+}
+.fh-event-list .media {
+  border-bottom: 1px solid #eeeeee;
+}
+.fh-event-list .media:last-child {
+  border: none;
+}
+.fh-event-list .media-heading {
+  font-weight: 600;
+  margin: 0 0 2px 0;
+}
+.fh-event-list .media-left {
+  font-size: 16px;
+}
+.table {
+  margin-bottom: 0!important;
+}
+.fh-app-stream a.media {
+  color: #555555;
+}
+.fh-app-stream a.media:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.fh-app-stream a.media:hover .fh-app-stream-icon {
+  background: #00618a;
+}
+.fh-app-stream a.media:hover .media-heading {
+  color: #00618a;
+}
+.fh-app-stream .media {
+  border-bottom: 1px solid #eeeeee;
+  display: block;
+  margin: 0;
+  padding: 10px 0;
+  position: relative;
+}
+.fh-app-stream .media p {
+  margin: 0;
+}
+.fh-app-stream .media:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+.fh-app-stream .media:first-child {
+  padding-top: 0;
+}
+.fh-app-stream .media:first-child .media-body ul {
+  top: 0px;
+}
+.fh-app-stream .media-heading {
+  color: #0099d3;
+}
+.fh-app-stream .fh-app-stream-details {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.fh-app-stream .fh-app-stream-details li {
+  text-align: center;
+  font-size: 22px;
+  line-height: 1;
+  border-left: 1px solid #eeeeee;
+  padding: 0 15px;
+}
+.fh-app-stream .fh-app-stream-details li strong {
+  margin-top: 10px;
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+}
+.fh-app-stream .fh-app-stream-analitycs {
+  clear: both;
+  margin-top: 1px;
+  color: #999999;
+  margin-bottom: 0;
+  background: #fafafa;
+  padding: 0 5px;
+  border-radius: 1px;
+}
+.fh-app-stream .fh-app-stream-icon {
+  display: block;
+  background-color: #0099d3;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 30px;
+  font-weight: lighter;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  border-radius: 1px;
 }
