@@ -3492,13 +3492,13 @@ table.datatable th:active {
   bottom: 0;
   right: 0;
 }
-.navbar-pf-lsg .navbar-brand {
+.navbar-pf-lg .navbar-brand {
   padding: 12px 0;
 }
-.navbar-pf-lsg .navbar-utility > li > a {
+.navbar-pf-lg .navbar-utility > li > a {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-.navbar-pf-lsg .navbar-utility li.dropdown > .dropdown-toggle .pficon-user {
+.navbar-pf-lg .navbar-utility li.dropdown > .dropdown-toggle .pficon-user {
   top: 12px;
 }
