@@ -10,1400 +10,467 @@
     <!-- PatternFly CSS -->
     <link rel="stylesheet" href="node_modules/patternfly/dist/css/patternfly.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    
-    <!-- PatternFly JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="node_modules/patternfly/components/matchHeight/jquery.matchHeight-min.js"></script>
-    <script src="node_modules/patternfly/components/c3/c3.min.js"></script>
-    <script src="node_modules/patternfly/components/d3/d3.min.js"></script>
-    <script src="node_modules/patternfly/dist/js/patternfly.min.js"></script>
 
   </head>
   <body class="cards-pf">
 
+    <nav class="navbar navbar-default navbar-pf navbar-pf-lg" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+          <img type="image/svg+xml" src="img/brand.svg" alt="PatternFly Enterprise Application" width="auto" height="10px" />
+        </a>
+      </div>
+      <div class="collapse navbar-collapse navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-utility">
+          <li>
+            <a href="#">Documentation</a>
+          </li>
+          <!--
+          <li>
+            <a href="#">Status</a>
+          </li>
+          -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="pficon pficon-user"></span>
+              Brian Johnson <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Link</a>
+              </li>
+              <li>
+                <a href="#">Another link</a>
+              </li>
+              <li>
+                <a href="#">Something else here</a>
+              </li>
+              <li class="divider"></li>
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">More options</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Another link</a>
+                  </li>
+                  <li>
+                    <a href="#">Something else here</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li>
+                    <a href="#">Separated link</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="#">One more separated link</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#">One more separated link</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+       
+        <ul class="nav navbar-nav navbar-primary">
+          <li class="active">
+            <a href="#">Dashboard</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Forms</a>
+          </li>
+          <li>
+            <a href="#">Resources</a>
+          </li>
+          <li>
+            <a href="#">Analytics</a>
+          </li>
+          <li>
+            <a href="#">Admin</a>
+          </li>
+        </ul>
 
-<nav class="navbar navbar-default navbar-pf" role="navigation">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-5">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">
-            <img src="node_modules/patternfly/dist/img/brand.svg" alt="PatternFly Enterprise Application">
-          </a>
-        </div>
-        <div class="collapse navbar-collapse navbar-collapse-5">
-          <ul class="nav navbar-nav navbar-utility">
-            <li>
-              <a href="#">Status</a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <span class="pficon pficon-user"></span>
-                Brian Johnson
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#">Link</a>
-                </li>
-                <li>
-                  <a href="#">Another link</a>
-                </li>
-                <li>
-                  <a href="#">Something else here</a>
-                </li>
-                <li class="divider"></li>
-                <li class="dropdown-submenu">
-                  <a tabindex="-1" href="#">More options</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#">Link</a>
-                    </li>
-                    <li>
-                      <a href="#">Another link</a>
-                    </li>
-                    <li>
-                      <a href="#">Something else here</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li>
-                      <a href="#">Separated link</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                      <a href="#">One more separated link</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="divider"></li>
-                <li>
-                  <a href="#">One more separated link</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-primary">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                Dropdown
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#">Link</a>
-                </li>
-                <li>
-                  <a href="#">Another link</a>
-                </li>
-                <li>
-                  <a href="#">Something else here</a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                  <a href="#">Separated link</a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                  <a href="#">One more separated link</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown active">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                Dropdown with Submenu
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#">Link</a>
-                </li>
-                <li>
-                  <a href="#">Another link</a>
-                </li>
-                <li>
-                  <a href="#">Something else here</a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                  <a href="#">Separated link</a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                  <a href="#">One more separated link</a>
-                </li>
-                <li class="dropdown-submenu active">
-                  <a tabindex="-1" href="#">More options</a>
-                  <ul class="dropdown-menu">
-                    <li class="active">
-                      <a href="#">Link</a>
-                    </li>
-                    <li>
-                      <a href="#">Another link</a>
-                    </li>
-                    <li>
-                      <a href="#">Something else here</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                      <a href="#">Separated link</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                      <a href="#">One more separated link</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                Dropdown with Dropup Submenu
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu dropup">
-                <li>
-                  <a href="#">Link</a>
-                </li>
-                <li>
-                  <a href="#">Another link</a>
-                </li>
-                <li>
-                  <a href="#">Something else here</a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                  <a href="#">Separated link</a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                  <a href="#">One more separated link</a>
-                </li>
-                <li class="dropdown-submenu">
-                  <a tabindex="-1" href="#">More options</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#">Link</a>
-                    </li>
-                    <li>
-                      <a href="#">Another link</a>
-                    </li>
-                    <li>
-                      <a href="#">Something else here</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                      <a href="#">Separated link</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                      <a href="#">One more separated link</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                Dropdown with Pull-left Submenu
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#">Link</a>
-                </li>
-                <li>
-                  <a href="#">Another link</a>
-                </li>
-                <li>
-                  <a href="#">Something else here</a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                  <a href="#">Separated link</a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                  <a href="#">One more separated link</a>
-                </li>
-                <li class="dropdown-submenu pull-left">
-                  <a tabindex="-1" href="#">More options</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#">Link</a>
-                    </li>
-                    <li>
-                      <a href="#">Another link</a>
-                    </li>
-                    <li>
-                      <a href="#">Something else here</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                      <a href="#">Separated link</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                      <a href="#">One more separated link</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">No Dropdown</a>
-            </li>
-          </ul>
-        </div>
-      </nav>    
+      </div>
+    </nav>
+
 
 
     <div class="container-fluid container-cards-pf">
-
-      <div class="row row-cards-pf">
       
-        <div class="col-xs-12 col-md-9">
-          
+      <div class="row row-cards-pf">
 
-      <div class="row">
-        <div class="col-xs-6 col-md-3">
+        <div class="col-xs-6 col-md-2">
           <div class="card-pf card-pf-accented card-pf-aggregate-status">
             <h2 class="card-pf-title">
-              Apps Running
+              Android
+            </h2>
+            <div class="card-pf-body">
+<p class="card-pf-aggregate-status-notifications">
+                <span class="card-pf-aggregate-status-notification"><a href="#"><span class="pficon pficon-error-circle-o"></span>4</a></span>
+                <span class="card-pf-aggregate-status-notification"><a href="#"><span class="pficon pficon-warning-triangle-o"></span>1</a></span>
+              </p>            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-2">
+          <div class="card-pf card-pf-accented card-pf-aggregate-status">
+            <h2 class="card-pf-title">
+              iOS
             </h2>
             <div class="card-pf-body">
               <p class="card-pf-aggregate-status-notifications">
-                <a href="#"><span class="pficon pficon-ok"></span>2</a>
+                <a href="#"><span class="pficon pficon-warning-triangle-o"></span>70</a>
               </p>
-              <div class="spark">
-                <div id="chart2" class="chart"></div>
-              </div>
             </div>
           </div>
         </div>
-        <div class="col-xs-6 col-md-3">
+        <div class="col-xs-6 col-md-2">
           <div class="card-pf card-pf-accented card-pf-aggregate-status">
             <h2 class="card-pf-title">
-              Memory
+              Windows Phone
             </h2>
             <div class="card-pf-body">
               <p class="card-pf-aggregate-status-notifications">
-                <a href="#"><span class="pficon pficon-warning-triangle-o"></span>70%</a>
+                <a href="#"><span class="card-pf-aggregate-status-notification"><span class="pficon pficon-ok"></span></span>15</a>
               </p>
-              <div class="spark">
-                <div id="chart2b" class="chart"></div>
-              </div>
             </div>
           </div>
         </div>
-        <div class="col-xs-6 col-md-3">
+        <div class="col-xs-6 col-md-2">
           <div class="card-pf card-pf-accented card-pf-aggregate-status">
             <h2 class="card-pf-title">
-              CPU
+              Cordova
             </h2>
             <div class="card-pf-body">
               <p class="card-pf-aggregate-status-notifications">
-                <a href="#"><span class="card-pf-aggregate-status-notification"><span class="pficon pficon-ok"></span></span>15%</a>
+                <a href="#"><span class="card-pf-aggregate-status-notification"><span class="pficon pficon-error-circle-o"></span></span>93</a>
               </p>
-              <div class="spark">
-                <div id="chart2c" class="chart"></div>
-              </div>
             </div>
           </div>
         </div>
-        <div class="col-xs-6 col-md-3">
-          <div class="card-pf card-pf-accented card-pf-aggregate-status">
-            <h2 class="card-pf-title">
-              Storage
-            </h2>
-            <div class="card-pf-body">
-              <p class="card-pf-aggregate-status-notifications">
-                <a href="#"><span class="card-pf-aggregate-status-notification"><span class="pficon pficon-error-circle-o"></span></span>93%</a>
-              </p>
-              <div class="spark">
-                <div id="chart2d" class="chart"></div>
-              </div>
-            </div>
+
+
+        <div class="col-xs-6 col-md-4">
+          <div class="card-pf card-pf-accented">
+            
+            <div class="row">
+              
+              <div class="col-xs-6 col-md-4">
+                CHART
+              </div><!-- col -->
+              <div class="col-xs-6 col-md-8">
+                <h2 class="card-pf-title">
+                  Platform Breakdown
+                </h2>
+                <div class="card-pf-body">
+                  
+                
+                </div>
+              </div><!-- col -->
+            </div><!-- row -->
           </div>
         </div>
+
+
       </div><!-- /row -->
       
-  
-  
-      <div class="row">
-  
-        <div class="col-xs-12">
+      
+      <div class="row row-cards-pf">
+        
+        <div class="col-xs-12 col-md-6">
+        
           <div class="card-pf">
-
             <div class="card-pf-heading">
-              <div class="card-pf-actions">
-                <a href="#" class="btn btn-primary btn-sm"><span class="fa fa-plus"></span> Create New Project</a>
-              </div>
               <h2 class="card-pf-title">
-                Active Projects
+                Android Security
               </h2>
-
-            </div>
+            </div><!-- heading -->
             <div class="card-pf-body">
+              <p>Data may be unknown for devi sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               
+              <table class="table card-table">
+              	<thead>
+              		<tr>
+              			<th>Version</th>
+              			<th># Devices</th>
+              			<th  class="action">Action</th>
+              		</tr>
+              	</thead>
+              	<tbody>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		</tr>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		</tr>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		</tr>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		</tr>
+              	</tbody>
+              </table>
               
-              
-              
-              
-              
-<div class="media-list fh-app-stream">
-    
-    <div class="media">
-      <div class="media-left">
-        <span class="fh-app-stream-icon">N</span>
-      </div><!-- media-left -->
-      <div class="media-body">
-        
-        <h2 class="media-heading">Name of the project</h2>
-        <p>Last modified <strong>2 month ago</strong> by Andrés Galante</p>
+              <h4>Rooted</h4>                
+              <p>Rooting a device modifies key aspects on its architecture, which can make it less secure.</p>
+              <p>CHART</p>
 
-        <ul class="list-inline fh-app-stream-analitycs">
-          <li>3972 <strong>Installs</strong></li>
-          <li>2872 <strong>Start ups</strong></li>
-          <li>272 <strong>Cloud Request</strong></li>
-          <li>22 <strong>Active users</strong></li>
-        </ul>
-
-        <ul class="list-inline fh-app-stream-details hidden-xs hidden-sm">
-          <li>2<strong>Client Apps</strong></li>
-          <li>1<strong>Cloud Apps</strong></li>
-          <li>5<strong>Services</strong></li>
-        </ul>
-        
-        
-      </div><!-- media-body -->
-      
-    </div><!-- media -->
-
-
-    <div class="media">
-      <div class="media-left">
-        <span class="fh-app-stream-icon">N</span>
-      </div><!-- media-left -->
-      <div class="media-body">
-        
-        <h2 class="media-heading">Name of the project</h2>
-        <p>Last modified <strong>2 month ago</strong> by Andrés Galante</p>
-
-        <ul class="list-inline fh-app-stream-analitycs">
-          <li>3972 <strong>Installs</strong></li>
-          <li>2872 <strong>Start ups</strong></li>
-          <li>272 <strong>Cloud Request</strong></li>
-          <li>22 <strong>Active users</strong></li>
-        </ul>
-
-        <ul class="list-inline fh-app-stream-details hidden-xs hidden-sm">
-          <li>2<strong>Client Apps</strong></li>
-          <li>1<strong>Cloud Apps</strong></li>
-          <li>5<strong>Services</strong></li>
-        </ul>
-        
-        
-      </div><!-- media-body -->
-      
-    </div><!-- media -->
-
-
-
-
-
-    <div class="media">
-      <div class="media-left">
-        <span class="fh-app-stream-icon">N</span>
-      </div><!-- media-left -->
-      <div class="media-body">
-        
-        <h2 class="media-heading">Name of the project</h2>
-        <p>Last modified <strong>2 month ago</strong> by Andrés Galante</p>
-
-        <ul class="list-inline fh-app-stream-analitycs">
-          <li>3972 <strong>Installs</strong></li>
-          <li>2872 <strong>Start ups</strong></li>
-          <li>272 <strong>Cloud Request</strong></li>
-          <li>22 <strong>Active users</strong></li>
-        </ul>
-
-        <ul class="list-inline fh-app-stream-details hidden-xs hidden-sm">
-          <li>2<strong>Client Apps</strong></li>
-          <li>1<strong>Cloud Apps</strong></li>
-          <li>5<strong>Services</strong></li>
-        </ul>
-        
-        
-      </div><!-- media-body -->
-      
-    </div><!-- media -->
-
-
-    <div class="media">
-      <div class="media-left">
-        <span class="fh-app-stream-icon">N</span>
-      </div><!-- media-left -->
-      <div class="media-body">
-        
-        <h2 class="media-heading">Name of the project</h2>
-        <p>Last modified <strong>2 month ago</strong> by Andrés Galante</p>
-
-        <ul class="list-inline fh-app-stream-analitycs">
-          <li>3972 <strong>Installs</strong></li>
-          <li>2872 <strong>Start ups</strong></li>
-          <li>272 <strong>Cloud Request</strong></li>
-          <li>22 <strong>Active users</strong></li>
-        </ul>
-
-        <ul class="list-inline fh-app-stream-details hidden-xs hidden-sm">
-          <li>2<strong>Client Apps</strong></li>
-          <li>1<strong>Cloud Apps</strong></li>
-          <li>5<strong>Services</strong></li>
-        </ul>
-        
-        
-      </div><!-- media-body -->
-      
-    </div><!-- media -->
-
-
-
-
-</div><!-- media list -->         
+            </div><!-- body -->
             
-            
-            
-            
-            
-            
-            
-
-            
-            
-            </div>
             <div class="card-pf-footer">
-              <p><a href="#">Footer link</a></p>
-            </div>
-
-          </div>
-        </div>
-      </div><!-- /row -->    
-      
-      
- 
- 
- 
- 
- 
- 
-       <div class="row">
-  
-        <div class="col-xs-8">
-          <div class="card-pf">
-
-            <div class="card-pf-heading">
-              <h2 class="card-pf-title">
-                Statics
-              </h2>
-
-            </div>
-            <div class="card-pf-body">
-
- 
-             
-<table class="table table-striped table-bordered">
-  <thead>
-    <tr>
-      <th>Rendering engine</th>
-      <th>Browser</th>
-      <th>Platform(s)</th>
-      <th>CSS grade</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Trident</td>
-      <td>
-        Internet
-         Explorer 
-        4.0
-        </td>
-      <td>Win 95+</td>
-      <td>X</td>
-    </tr>
-    <tr>
-      <td>Trident</td>
-      <td>Internet
-         Explorer 5.0</td>
-      <td>Win 95+</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <td>Trident</td>
-      <td>Internet
-         Explorer 5.5</td>
-      <td>Win 95+</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <td>Trident</td>
-      <td>Internet
-         Explorer 6</td>
-      <td>Win 98+</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <td>Trident</td>
-      <td>Internet Explorer 7</td>
-      <td>Win XP SP2+</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <td>Gecko</td>
-      <td>Firefox 1.5</td>
-      <td>Win 98+ / OSX.2+</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <td>Gecko</td>
-      <td>Firefox 2.0</td>
-      <td>Win 98+ / OSX.2+</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <td>Gecko</td>
-      <td>Firefox 3.0</td>
-      <td>Win 2k+ / OSX.3+</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <td>Gecko</td>
-      <td>Camino 1.0</td>
-      <td>OSX.2+</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <td>Gecko</td>
-      <td>Camino 1.5</td>
-      <td>OSX.3+</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <td>Gecko</td>
-      <td>Netscape 7.2</td>
-      <td>Win 95+ / Mac.9</td>
-      <td>A</td>
-    </tr>
-
-  </tbody>
-</table>
-            
-            
-            </div>
-
+              <p><a href="#">See All Android Devices</a></p>
+            </div><!-- footer -->
           
-          </div>
+          </div><!-- card -->        
 
+        </div><!-- col --> 
+        
 
-
-
-
-        </div>
-
-
-
-
-
-            <div class="col-xs-6 col-sm-4 col-md-4">
-              <div class="card-pf">
-
+        <div class="col-xs-12 col-md-6">
+        
+          <div class="card-pf">
             <div class="card-pf-heading">
               <h2 class="card-pf-title">
-                Platforms
+                iOS Security
               </h2>
             </div>
             <div class="card-pf-body">
+              <p>Data may be unknown for devi sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+              <table class="table card-table">
+              	<thead>
+              		<tr>
+              			<th>Version</th>
+              			<th># Devices</th>
+              			<th  class="action">Action</th>
+              		</tr>
+              	</thead>
+              	<tbody>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		</tr>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		</tr>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		</tr>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		</tr>
+              	</tbody>
+              </table>
 
-
-      <div id="chart8"></div>
-
-
-
-            </div>
-
-
-
-              </div>
-            </div>
-
-
-
-
-
-
-
-      </div><!-- /row -->    
-      
-
- 
- 
- 
-      
-      
               
-        </div>
-        
-        <div class="col-xs-12 col-md-3">
-        
-          <div class="row">
-            <div class="col-xs-6 col-sm-4 col-md-12">
-              <div class="card-pf">
-
-            <div class="card-pf-heading">
-              <h2 class="card-pf-title">
-                Events<span class="badge pull-right">12</span>
-              </h2>
-            </div>
-            <div class="card-pf-body">
-
-
-
-<div class="fh-event-list">      
-        
-<div class="media">
-  <div class="media-left">
-    <span class="pficon pficon-info"></span>
-  </div>
-  <div class="media-body">
-    <h5 class="media-heading">Some event  happen</h5>
-    <p>Today at 3:25:36 PM</p>
-  </div>
-</div>  <!-- ends item -->     
-
-
-<div class="media">
-  <div class="media-left">
-    <span class="pficon pficon-ok"></span>
-  </div>
-  <div class="media-body">
-    <h5 class="media-heading">Some event  happen</h5>
-    <p>Today at 3:25:36 PM</p>
-  </div>
-</div>  <!-- ends item -->     
-
-
-
-
-<div class="media">
-  <div class="media-left">
-    <span class="pficon pficon-error-circle-o"></span>
-  </div>
-  <div class="media-body">
-    <h5 class="media-heading">Some event  happen</h5>
-    <p>Today at 3:25:36 PM</p>
-  </div>
-</div>  <!-- ends item -->     
-
-
-<div class="media">
-  <div class="media-left">
-    <span class="pficon pficon-info"></span>
-  </div>
-  <div class="media-body">
-    <h5 class="media-heading">Some event  happen</h5>
-    <p>Today at 3:25:36 PM</p>
-  </div>
-</div>  <!-- ends item -->     
-
-
-<div class="media">
-  <div class="media-left">
-    <span class="pficon pficon-ok"></span>
-  </div>
-  <div class="media-body">
-    <h5 class="media-heading">Some event  happen</h5>
-    <p>Today at 3:25:36 PM</p>
-  </div>
-</div>  <!-- ends item -->     
-
-
-<div class="media">
-  <div class="media-left">
-    <span class="pficon pficon-warning-triangle-o"></span>
-  </div>
-  <div class="media-body">
-    <h5 class="media-heading">Some event  happen</h5>
-    <p>Today at 3:25:36 PM</p>
-  </div>
-</div>  <!-- ends item -->   
-
-
-<div class="media">
-  <div class="media-left">
-    <span class="pficon pficon-error-circle-o"></span>
-  </div>
-  <div class="media-body">
-    <h5 class="media-heading">Some event  happen</h5>
-    <p>Today at 3:25:36 PM</p>
-  </div>
-</div>  <!-- ends item -->     
-
-
-<div class="media">
-  <div class="media-left">
-    <span class="pficon pficon-info"></span>
-  </div>
-  <div class="media-body">
-    <h5 class="media-heading">Some event  happen</h5>
-    <p>Today at 3:25:36 PM</p>
-  </div>
-</div>  <!-- ends item -->     
-
-
-<div class="media">
-  <div class="media-left">
-    <span class="pficon pficon-ok"></span>
-  </div>
-  <div class="media-body">
-    <h5 class="media-heading">Some event  happen</h5>
-    <p>Today at 3:25:36 PM</p>
-  </div>
-</div>  <!-- ends item -->     
-
-
-<div class="media">
-  <div class="media-left">
-    <span class="pficon pficon-warning-triangle-o"></span>
-  </div>
-  <div class="media-body">
-    <h5 class="media-heading">Some event  happen</h5>
-    <p>Today at 3:25:36 PM</p>
-  </div>
-</div>  <!-- ends item -->  
-
-<div class="media">
-  <div class="media-left">
-    <span class="pficon pficon-info"></span>
-  </div>
-  <div class="media-body">
-    <h5 class="media-heading">Some event  happen</h5>
-    <p>Today at 3:25:36 PM</p>
-  </div>
-</div>  <!-- ends item -->     
-
-
-<div class="media">
-  <div class="media-left">
-    <span class="pficon pficon-ok"></span>
-  </div>
-  <div class="media-body">
-    <h5 class="media-heading">Some event  happen</h5>
-    <p>Today at 3:25:36 PM</p>
-  </div>
-</div>  <!-- ends item -->     
-
-
-<div class="media">
-  <div class="media-left">
-    <span class="pficon pficon-warning-triangle-o"></span>
-  </div>
-  <div class="media-body">
-    <h5 class="media-heading">Some event  happen</h5>
-    <p>Today at 3:25:36 PM</p>
-  </div>
-</div>  <!-- ends item -->  
-<div class="media">
-  <div class="media-left">
-    <span class="pficon pficon-error-circle-o"></span>
-  </div>
-  <div class="media-body">
-    <h5 class="media-heading">Some event  happen</h5>
-    <p>Today at 3:25:36 PM</p>
-  </div>
-</div>  <!-- ends item -->     
-
-
-<div class="media">
-  <div class="media-left">
-    <span class="pficon pficon-info"></span>
-  </div>
-  <div class="media-body">
-    <h5 class="media-heading">Some event  happen</h5>
-    <p>Today at 3:25:36 PM</p>
-  </div>
-</div>  <!-- ends item -->     
-
-
- 
-
-
-       
-</div><!-- event list -->
-
-
-
-
-
-
-
-
-
-
+              <div class="card-pf-section">
+                <h4>
+                  Jailbroken
+                </h4>                
+                <p>Jailbreaking a device modifies key aspects on its architecture, which can make it less secure.</p>
+                <p>CHART</p>
+              </div><!-- card-pf-section -->
 
             </div>
             <div class="card-pf-footer">
-              <p><a href="#">Footer link</a></p>
+              <p><a href="#">See All Android Devices</a></p>
             </div>
+          </div>        
 
-
-              </div>
-            </div>
-
-
-
-
-          </div><!-- /row -->        
+        </div><!-- col --> 
         
-        
-        </div>
-        
-      </div>      
+              
       
-    </div><!-- /container -->
-    <script>
+      </div><!-- /row -->
+      
+            
+      <div class="row row-cards-pf">
+        
+        <div class="col-xs-12 col-md-6">
+        
+          <div class="card-pf">
+            <div class="card-pf-heading">
+              <h2 class="card-pf-title">
+                Windows Phone Security
+              </h2>
+            </div>
+            <div class="card-pf-body">
+              <p>Data may be unknown for devi sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+              <table class="table card-table">
+              	<thead>
+              		<tr>
+              			<th>Version</th>
+              			<th># Devices</th>
+              			<th  class="action">Action</th>
+              		</tr>
+              	</thead>
+              	<tbody>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		</tr>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		</tr>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		</tr>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		</tr>
+              	</tbody>
+              </table>
+
+            </div>
+            <div class="card-pf-footer">
+              <p><a href="#">See All Android Devices</a></p>
+            </div>
+          </div>        
+
+        </div><!-- col --> 
+        
+
+        <div class="col-xs-12 col-md-6">
+        
+          <div class="card-pf">
+            <div class="card-pf-heading">
+              <h2 class="card-pf-title">
+                Cordova Security
+              </h2>
+            </div>
+            <div class="card-pf-body">
+              <p>Data may be unknown for devi sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              
+              <table class="table card-table">
+              	<thead>
+              		<tr>
+              			<th>Version</th>
+              			<th># Devices</th>
+              			<th  class="action">Action</th>
+              		</tr>
+              	</thead>
+              	<tbody>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		</tr>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		</tr>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		</tr>
+              		<tr>
+              			<td>5.1 (Version Name)</td>
+              			<td>134</td>
+              			<td class="action"><a href="#" class="btn btn-small btn-default btn-table">View Devices</a></td>
+              		</tr>
+              	</tbody>
+              </table>
+              
+            </div>
+            <div class="card-pf-footer">
+              <p><a href="#">See All Android Devices</a></p>
+            </div>
+          </div>        
+
+        </div><!-- col --> 
+        
+              
+      
+      </div><!-- /row -->      
+      
+      
+      
+      
+      
+    </div><!-- /container -->        
+    
+
+
+    
+  <!-- PatternFly JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="node_modules/patternfly/components/matchHeight/jquery.matchHeight-min.js"></script>
+  <script src="node_modules/patternfly/components/c3/c3.min.js"></script>
+  <script src="node_modules/patternfly/components/d3/d3.min.js"></script>
+  <script src="node_modules/patternfly/dist/js/patternfly.min.js"></script>
+  <script src="js/script.js" charset="utf-8"></script>
+  
+  <script>
+
       $(function() {
         // matchHeight the contents of each .card-pf and then the .card-pf itself
-        $(".row > [class*='col'] > .card-pf .card-pf-title").matchHeight();
-        $(".row > [class*='col'] > .card-pf > .card-pf-body").matchHeight();
-        $(".row > [class*='col'] > .card-pf > .card-pf-footer").matchHeight();
-        $(".row > [class*='col'] > .card-pf").matchHeight();
+        $(".row-cards-pf > [class*='col'] > .card-pf .card-pf-title").matchHeight();
+        $(".row-cards-pf > [class*='col'] > .card-pf > .card-pf-body").matchHeight();
+        $(".row-cards-pf > [class*='col'] > .card-pf > .card-pf-footer").matchHeight();
+        $(".row-cards-pf > [class*='col'] > .card-pf").matchHeight();
+        // initialize tooltips
+        $('[data-toggle="tooltip"]').tooltip();
       });
-    </script>
-    
-    
-    
-    
-    
-      <script>
-        var chart = c3.generate({
-          axis: {
-            x: {
-              tick: {
-                outer: false
-              }
-            },
-            y: {
-              tick: {
-                outer: false
-              }
-            }
-          },
-          bindto: '#chart',
-          data: {
-            columns: [
-              ['data1', 30, 200, 100, 400, 150, 250],
-              ['data2', 50, 220, 310, 240, 115, 25],
-              ['data3', 70, 100, 390, 295, 170, 220],
-              ['data4', 10, 340, 30, 290, 35, 20],
-              ['data5', 90, 150, 160, 165, 180, 5]
-            ]
-          },
-          grid: {
-            y: {
-              show: true
-            }
-          },
-          point: {
-            r: 4
-          }
-        });
-        var chart1 = c3.generate({
-          axis: {
-            x: {
-              tick: {
-                outer: false
-              }
-            },
-            y: {
-              tick: {
-                outer: false
-              }
-            }
-          },
-          bindto: '#chart1',
-          color: {
-            pattern: ['#0088ce', '#00659c', '#3f9c35', '#ec7a08', '#cc0000']
-          },
-          data: {
-            columns: [
-              ['data1', 30, 200, 100, 400, 150, 250],
-              ['data2', 50, 220, 310, 240, 115, 25],
-              ['data3', 70, 100, 390, 295, 170, 220],
-              ['data4', 10, 340, 30, 290, 35, 20],
-              ['data5', 90, 150, 160, 165, 180, 5]
-            ]
-          },
-          grid: {
-            y: {
-              show: true
-            }
-          },
-          point: {
-            r: 4
-          }
-        });
-        
-        
-        var chart2 = c3.generate({
-          axis: {
-            x: {
-              show: false
-            },
-            y: {
-              show: false
-            }
-          },
-          bindto: '#chart2',
-          color: {
-            pattern: ['#0088ce', '#00659c', '#3f9c35', '#ec7a08', '#cc0000']
-          },
-          data: {
-            columns: [
-              ['Less than one year remaining', 10, 14, 12, 20, 31, 27, 44, 36, 52, 55, 62, 68, 69, 88, 74, 88, 91],
-            ],
-            type: 'area'
-          },
-          legend: {
-            show: false
-          },
-          point: {
-            r: 1,
-            focus: {
-              expand: {
-                r: 4
-              }
-            }
-          },
-          size: {
-            height: 50
-          },
-          tooltip: {
-            // because a sparkline should only contain a single data column, the tooltip will only work for a single data column
-            contents: function (d, defaultTitleFormat, defaultValueFormat, color) {
-              for (i = 0; i < d.length; i++) {
-                return '<span class="c3-tooltip-sparkline">' + d[i].value + '%' + '</span>'
-              }
-            }
-          }
-        });
-
-
-
-
-
-
-
-        var chart2b = c3.generate({
-          axis: {
-            x: {
-              show: false
-            },
-            y: {
-              show: false
-            }
-          },
-          bindto: '#chart2b',
-          color: {
-            pattern: ['#0088ce', '#00659c', '#3f9c35', '#ec7a08', '#cc0000']
-          },
-          data: {
-            columns: [
-              ['Less than one year remaining', 20, 10, 12, 2, 11, 17, 24, 26, 52, 8, 35, 38, 39, 28, 4, 48, 91],
-            ],
-            type: 'area'
-          },
-          legend: {
-            show: false
-          },
-          point: {
-            r: 1,
-            focus: {
-              expand: {
-                r: 4
-              }
-            }
-          },
-          size: {
-            height: 50
-          },
-          tooltip: {
-            // because a sparkline should only contain a single data column, the tooltip will only work for a single data column
-            contents: function (d, defaultTitleFormat, defaultValueFormat, color) {
-              for (i = 0; i < d.length; i++) {
-                return '<span class="c3-tooltip-sparkline">' + d[i].value + '%' + '</span>'
-              }
-            }
-          }
-        });
-
-
-
-
-        var chart2c = c3.generate({
-          axis: {
-            x: {
-              show: false
-            },
-            y: {
-              show: false
-            }
-          },
-          bindto: '#chart2c',
-          color: {
-            pattern: ['#0088ce', '#00659c', '#3f9c35', '#ec7a08', '#cc0000']
-          },
-          data: {
-            columns: [
-              ['Less than one year remaining', 90, 80, 65, 30, 20, 17, 24, 26, 22, 24, 85, 78, 59, 78, 70, 48, 91],
-            ],
-            type: 'area'
-          },
-          legend: {
-            show: false
-          },
-          point: {
-            r: 1,
-            focus: {
-              expand: {
-                r: 4
-              }
-            }
-          },
-          size: {
-            height: 50
-          },
-          tooltip: {
-            // because a sparkline should only contain a single data column, the tooltip will only work for a single data column
-            contents: function (d, defaultTitleFormat, defaultValueFormat, color) {
-              for (i = 0; i < d.length; i++) {
-                return '<span class="c3-tooltip-sparkline">' + d[i].value + '%' + '</span>'
-              }
-            }
-          }
-        });
-
-
-
-
-
-        var chart2d = c3.generate({
-          axis: {
-            x: {
-              show: false
-            },
-            y: {
-              show: false
-            }
-          },
-          bindto: '#chart2d',
-          color: {
-            pattern: ['#0088ce', '#00659c', '#3f9c35', '#ec7a08', '#cc0000']
-          },
-          data: {
-            columns: [
-              ['Less than one year remaining', 30, 40, 55, 60, 70, 87, 94, 26, 102, 124, 185, 178, 159, 178, 170, 248, 691],
-            ],
-            type: 'area'
-          },
-          legend: {
-            show: false
-          },
-          point: {
-            r: 1,
-            focus: {
-              expand: {
-                r: 4
-              }
-            }
-          },
-          size: {
-            height: 50
-          },
-          tooltip: {
-            // because a sparkline should only contain a single data column, the tooltip will only work for a single data column
-            contents: function (d, defaultTitleFormat, defaultValueFormat, color) {
-              for (i = 0; i < d.length; i++) {
-                return '<span class="c3-tooltip-sparkline">' + d[i].value + '%' + '</span>'
-              }
-            }
-          }
-        });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        var chart3 = c3.generate({
-          axis: {
-            x: {
-              tick: {
-                outer: false
-              }
-            },
-            y: {
-              tick: {
-                outer: false
-              }
-            }
-          },
-          bindto: '#chart3',
-          color: {
-            pattern: ['#0088ce', '#00659c', '#3f9c35', '#ec7a08', '#cc0000']
-          },
-          data: {
-            columns: [
-              ['data1', 30, 200, 100, 400, 150, 250],
-              ['data2', 50, 220, 310, 240, 115, 25],
-              ['data3', 70, 100, 390, 295, 170, 220],
-              ['data4', 10, 340, 30, 290, 35, 20],
-              ['data5', 90, 150, 160, 165, 180, 5]
-            ],
-            type: 'spline'
-          },
-          grid: {
-            y: {
-              show: true
-            }
-          },
-          point: {
-            r: 4
-          }
-        });
-        var chart4 = c3.generate({
-          axis: {
-            x: {
-              tick: {
-                outer: false
-              }
-            },
-            y: {
-              tick: {
-                outer: false
-              }
-            }
-          },
-          bindto: '#chart4',
-          color: {
-            pattern: ['#0088ce', '#00659c', '#3f9c35', '#ec7a08', '#cc0000']
-          },
-          data: {
-            columns: [
-              ['data1', 300, 350, 300, 0, 0, 0],
-              ['data2', 130, 100, 140, 200, 150, 50]
-            ],
-            types: {
-              data1: 'area-spline',
-              data2: 'area-spline'
-            }
-          },
-          grid: {
-            y: {
-              show: true
-            }
-          },
-          point: {
-            r: 4
-          }
-        });
-        var chart5 = c3.generate({
-          axis: {
-            x: {
-              tick: {
-                outer: false
-              }
-            },
-            y: {
-              tick: {
-                outer: false
-              }
-            }
-          },
-          bindto: '#chart5',
-          color: {
-            pattern: ['#0088ce', '#00659c', '#3f9c35', '#ec7a08', '#cc0000']
-          },
-          data: {
-            columns: [
-              ['data1', 300, 350, 300, 0, 0, 0],
-              ['data2', 130, 100, 140, 200, 150, 50]
-            ],
-            types: {
-              data1: 'area-spline',
-              data2: 'area-spline'
-            },
-            groups: [['data1', 'data2']]
-          },
-          grid: {
-            y: {
-              show: true
-            }
-          },
-          point: {
-            r: 4
-          }
-        });
-        var chart6 = c3.generate({
-          axis: {
-            x: {
-              categories: ['Red', 'Orange', 'Green', 'Blue'],
-              tick: {
-                outer: false
-              },
-              type: 'category'
-            },
-            y: {
-              tick: {
-                outer: false
-              }
-            }
-          },
-          bar: {
-            width: {
-              ratio: 0.5 // this makes bar width 50% of length between ticks
-            }
-          },
-          bindto: '#chart6',
-          color: {
-            pattern: ['#0088ce', '#00659c', '#3f9c35', '#ec7a08', '#cc0000']
-          },
-          data: {
-            columns: [
-              ['data1', 5, 200, 200, 400],
-              ['data2', 130, 100, 20, 200]
-            ],
-            type: 'bar'
-          },
-          grid: {
-            y: {
-              show: true
-            }
-          }
-        });
-        var chart7 = c3.generate({
-          axis: {
-            rotated: true,
-            x: {
-              categories: ['Red', 'Orange', 'Green', 'Blue'],
-              tick: {
-                outer: false
-              },
-              type: 'category'
-            },
-            y: {
-              tick: {
-                outer: false
-              }
-            }
-          },
-          bindto: '#chart7',
-          color: {
-            pattern: ['#0088ce', '#00659c', '#3f9c35', '#ec7a08', '#cc0000']
-          },
-          data: {
-            columns: [
-              ['data1', 5, 200, 200, 400],
-              ['data2', 130, 100, 20, 200]
-            ],
-            groups: [
-              ['data1', 'data2']
-            ],
-            type: 'bar'
-          },
-          grid: {
-            y: {
-              show: true
-            }
-          }
-        });
-        var chart8 = c3.generate({
-          bindto: '#chart8',
-          data: {
-            colors: {
-              Cloud: 
-          '#00659c',     Virtual: '#0088ce',
-              Baremetal: '#969696'
-            },
-            columns: [
-              ['Cloud', 4,828],
-              ['Virtual', 13,258],
-              ['Baremetal', 11,1124]
-            ],
-            type : 'donut',
-            onclick: function (d, i) { console.log("onclick", d, i); },
-            onmouseover: function (d, i) { console.log("onmouseover", d, i); },
-            onmouseout: function (d, i) { console.log("onmouseout", d, i); }
-          },
-          donut: {
-            title: "29,210 Host Totals"
-          }
-        });
-      </script>    
-    
-    
-    
-    
-
+    </script> 
+ 
   </body>
 </html>

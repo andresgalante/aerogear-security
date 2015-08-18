@@ -5,135 +5,51 @@
 @font-path:         "../node_modules/patternfly/dist/fonts";
 @icon-font-path:    "../node_modules/patternfly/components/bootstrap/fonts/";
 
+// Project list =====================================================
 
-.spark{
-  margin: -20px -10px 0px -10px;
-  .chart{
-    margin-bottom: -15px;
+.card-table{
+//  background: red;
+border-bottom: 1px solid @table-border-color;
+//margin-top: 0;
+
+  thead{
+    background: transparent;
   }
 }
 
-.card-pf-actions{
-  float: right;
-  margin-top: -5px;
+.card-pf-section{
+//  background: red;
+// border-top: 1px solid @card-pf-border-color;
+}
+
+.action{
+  width: 100px;
+  position: relative;
+  a{
+    border: none;
+    box-shadow: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 
-.fh-event-list{
-  .media{
-    border-bottom: 1px solid @gray-lighter;
-    &:last-child{
-      border: none;
-    }
-  }
-  .media-heading{
-    font-weight: 600;
-    margin: 0 0 2px 0;
-  }
-  .media-left{
-    font-size: @font-size-h3;
-  }
-}
-
-
-.table{
-  margin-bottom: 0!important;
-}
-
-
-// media custom =====================================================
-
-.fh-app-stream{
-  
-.media-left,
-.media > .pull-left {
-//  padding-right: 20px;
-}
-
-  a.media{
-    color: @gray;
-    &:hover{
-      text-decoration: none;
-      cursor: pointer;
-      .fh-app-stream-icon{
-        background: @link-hover-color;
-      }
-      .media-heading{
-        color:  @link-hover-color;
-      }
-    }
-  }
-  
-  .media{
-    border-bottom: 1px solid @gray-lighter;
-    display: block;
-    margin: 0;
-    padding: 10px 0;
-    position: relative;
-    p{
-      margin: 0;
-    }
-    &:last-child{
-      border: none;
-      padding-bottom: 0;
-    }
-    &:first-child{
-      padding-top: 0;
-      .media-body ul{
-      top: 0px;
-      }      
-    }
-  }
-  
-  .media-heading{
-    color:  @link-color;
-  }
-  
-  
-  .fh-app-stream-details{
-//      .hidden-xs;
-//      .hidden-sm;
-      position: absolute;
-      right: 0;
-      top: 10px;
-//float: right;
-    li{
-      text-align: center;
-      font-size: @font-size-h2;
-      line-height: 1;
-      border-left: 1px solid @gray-lighter;
-      padding: 0 15px;
-      strong{
-        margin-top: 10px;
-        display: block;
-        font-size: @font-size-base;
-        font-weight: normal;
-      }
-    }
-  }
-  
-  .fh-app-stream-analitycs{
-    clear: both;
-    margin-top: 1px;
-    color: @gray-light;
-    margin-bottom: 0;
-    background: #fafafa;
-    padding: 0 5px;
-    border-radius: @border-radius-base;
-  }
-  
-  .fh-app-stream-icon{
-    display:block;
-    background-color: @link-color; 
-    color: rgba(255,255,255,.9);
-    font-size: @font-size-base * 2.5;
-    font-weight: lighter;
-    line-height: 50px;
-    text-align: center;
-    width: 50px;
-    border-radius: @border-radius-base;
+.navbar-pf-lsg{
+  .navbar-brand {
+    padding: 12px 0;
   }  
-  
-  
-}// ups media stream
-
+  .navbar-utility {
+    > li > a {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    li.dropdown > .dropdown-toggle {
+      .pficon-user {
+        top: 12px;
+      }
+    }    
+  }  
+}

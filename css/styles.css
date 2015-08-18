@@ -3473,103 +3473,32 @@ table.datatable th:active {
 .prettyprint ol.linenums {
   margin-bottom: 0;
 }
-.spark {
-  margin: -20px -10px 0px -10px;
+.card-table {
+  border-bottom: 1px solid #d1d1d1;
 }
-.spark .chart {
-  margin-bottom: -15px;
+.card-table thead {
+  background: transparent;
 }
-.card-pf-actions {
-  float: right;
-  margin-top: -5px;
-}
-.fh-event-list .media {
-  border-bottom: 1px solid #eeeeee;
-}
-.fh-event-list .media:last-child {
-  border: none;
-}
-.fh-event-list .media-heading {
-  font-weight: 600;
-  margin: 0 0 2px 0;
-}
-.fh-event-list .media-left {
-  font-size: 16px;
-}
-.table {
-  margin-bottom: 0!important;
-}
-.fh-app-stream a.media {
-  color: #555555;
-}
-.fh-app-stream a.media:hover {
-  text-decoration: none;
-  cursor: pointer;
-}
-.fh-app-stream a.media:hover .fh-app-stream-icon {
-  background: #00618a;
-}
-.fh-app-stream a.media:hover .media-heading {
-  color: #00618a;
-}
-.fh-app-stream .media {
-  border-bottom: 1px solid #eeeeee;
-  display: block;
-  margin: 0;
-  padding: 10px 0;
+.action {
+  width: 100px;
   position: relative;
 }
-.fh-app-stream .media p {
-  margin: 0;
-}
-.fh-app-stream .media:last-child {
+.action a {
   border: none;
-  padding-bottom: 0;
-}
-.fh-app-stream .media:first-child {
-  padding-top: 0;
-}
-.fh-app-stream .media:first-child .media-body ul {
-  top: 0px;
-}
-.fh-app-stream .media-heading {
-  color: #0099d3;
-}
-.fh-app-stream .fh-app-stream-details {
+  box-shadow: none;
   position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
   right: 0;
-  top: 10px;
 }
-.fh-app-stream .fh-app-stream-details li {
-  text-align: center;
-  font-size: 22px;
-  line-height: 1;
-  border-left: 1px solid #eeeeee;
-  padding: 0 15px;
+.navbar-pf-lsg .navbar-brand {
+  padding: 12px 0;
 }
-.fh-app-stream .fh-app-stream-details li strong {
-  margin-top: 10px;
-  display: block;
-  font-size: 12px;
-  font-weight: normal;
+.navbar-pf-lsg .navbar-utility > li > a {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
-.fh-app-stream .fh-app-stream-analitycs {
-  clear: both;
-  margin-top: 1px;
-  color: #999999;
-  margin-bottom: 0;
-  background: #fafafa;
-  padding: 0 5px;
-  border-radius: 1px;
-}
-.fh-app-stream .fh-app-stream-icon {
-  display: block;
-  background-color: #0099d3;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 30px;
-  font-weight: lighter;
-  line-height: 50px;
-  text-align: center;
-  width: 50px;
-  border-radius: 1px;
+.navbar-pf-lsg .navbar-utility li.dropdown > .dropdown-toggle .pficon-user {
+  top: 12px;
 }
