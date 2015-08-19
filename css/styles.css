@@ -3502,7 +3502,10 @@ table.datatable th:active {
 .navbar-pf-lg .navbar-utility li.dropdown > .dropdown-toggle .pficon-user {
   top: 12px;
 }
+.row-first .card-pf {
+  height: 85px!important;
+}
 .row-first .card-pf img {
   width: 70px;
-  margin-top: 10px;
+  margin-top: 6px;
 }
